@@ -4,14 +4,11 @@ import react_logo from "./assets/react.svg"
 export default function Header() {
     return (
         <header>
-            <nav className="nav">
-                <img src={react_logo} className="nav-logo" alt="react logo" />
-                <ul className="nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+            <div className="logo">
+                <img src={react_logo} className="header-logo" alt="react logo" />
+                <h3>ReactFacts</h3>
+            </div>
+            <h4 className="react--logo_text">React Course - Project 1</h4>
         </header>
     )
 }

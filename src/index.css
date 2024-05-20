@@ -1,18 +1,68 @@
-.nav {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: Inter, sans-serif;
+}
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  background: #21222A;
+  padding: 20px 30px;
 }
 
-.nav-logo {
-  width: 60px;
+.header-logo {
+  width: 40px;
 }
 
-.nav-items {
-  list-style: none;
+
+main {
+  padding: 10px 30px;
+  background-color: #282D35;
+  color: #fff;
+}
+
+main > h1 {
+  letter-spacing: -0.05em;
+}
+
+.app-container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.nav-items > li {
-  padding: 10px;
+.logo {
+  display: flex;
+  color: #DEEBF8;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.logo > h3 {
+  color: #61DAFB;
+}
+
+header > h4 {
+  color: #DEEBF8;
+}
+
+.react-facts > li {
+  line-height: 30px;
+}
+
+.react-facts > li::marker {
+  color: #61DAFB;
+  font-size: 25px;
+}
+
+footer {
+  background-color: #ccc;
+  padding: 50px;
+  text-align: center;
 }
