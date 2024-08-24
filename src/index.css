@@ -16,6 +16,11 @@ header {
   padding: 20px 30px;
 }
 
+header.dark {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
 .header-logo {
   width: 40px;
 }
@@ -25,6 +30,12 @@ main {
   padding: 10px 30px;
   background-color: #282D35;
   color: #fff;
+}
+
+main.dark {
+    background-image: url("./images/react-icon-dark.png"); 
+    background-color: #fff;
+    color: #282D35;    
 }
 
 main > h1 {
@@ -61,8 +72,68 @@ header > h4 {
   font-size: 25px;
 }
 
-footer {
-  background-color: #ccc;
-  padding: 50px;
-  text-align: center;
+.toggler {
+  display: flex;
+  align-items: center;
 }
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+header.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+header.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #918E9B;
+}
+
+header.dark .toggler--light {
+  color: #2B283A;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+header.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+header.dark .toggler--slider {
+  justify-content: flex-end;
+}
+  
+footer {
+    background-color: #ccc;
+    padding: 50px;
+    text-align: center;
+  }

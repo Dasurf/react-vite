@@ -1,13 +1,19 @@
-import React from "react"
+import React, {useState} from "react"
 import Header from "./Header"
 import Footer from "./Footer"
-import Body from "./Body"
+import Main from "./Main"
 
 function App() {
+    const [darkMode, setDarkMode] = useState(true);
+
+    function toggleBg() {
+        setDarkMode(prevBg => !prevBg);
+    }
+
     return (
         <div className="app-container">
-            <Header />
-            <Body />
+            <Header darkMode={darkMode} toggleDarkMode={toggleBg}/>
+            <Main darkMode={darkMode}/>
             <Footer />
         </div>
     )
