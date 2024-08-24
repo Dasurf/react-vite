@@ -98,7 +98,7 @@ header > h4 {
 
 header.dark .toggler--slider {
   border-color: white;
-  background-color: #F5F5F5;
+  background-color: #ccc;
 }
 
 .toggler--slider--circle {
